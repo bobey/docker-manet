@@ -12,13 +12,13 @@ It is a good way to make sure that your websites are responsive or to make thumb
 ## Run using Docker
 
 ```sh
-docker run -p 80:8891 bobey/manet
+docker run -d -p 80:8891 bobey/manet
 ```
 
 You can pass in every options Manet accepts:
 
 ```sh
-docker run -p 80:8891 bobey/manet --cache=3600 --whitelist=...
+docker run -d -p 80:8891 bobey/manet --cache=3600 --whitelist=...
 ```
 
 ## Build
