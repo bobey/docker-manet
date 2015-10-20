@@ -3,6 +3,7 @@
 Dockerfile for Manet - Website screenshot service powered by Node.js, SlimerJS and PhantomJS
 
 This is a Dockerfile for [vbauer/manet project](https://github.com/vbauer/manet).
+The associated docker image is hosted on [Docker Hub](https://hub.docker.com/r/bobey/manet).
 
 ## What is Manet?
 
