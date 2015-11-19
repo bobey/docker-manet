@@ -19,7 +19,7 @@ docker run -d -p 80:8891 bobey/manet
 You can pass in every options Manet accepts:
 
 ```sh
-docker run -d -p 80:8891 bobey/manet --host=0.0.0.0 --cache=3600 --cleanupRuntime --whitelist=...
+docker run -d -p 80:8891 bobey/manet --cache=3600 --cleanupRuntime --whitelist=...
 ```
 
 ## Build
