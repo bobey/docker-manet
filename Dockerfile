@@ -5,9 +5,9 @@ RUN apt-get update && \
 
 RUN npm install -g slimerjs phantomjs manet@0.4.7
 
-COPY bin/start_manet.sh /usr/local/bin/
+COPY bin/startup.sh /usr/local/bin/startup.sh
 
 EXPOSE 8891
 
-ENTRYPOINT ["start_manet.sh"]
+ENTRYPOINT ["startup.sh", "--host=0.0.0.0 "]
 CMD ["--engine=slimerjs"]
