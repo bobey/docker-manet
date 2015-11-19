@@ -1,8 +1,13 @@
 FROM node:4.2
 
-RUN npm install -g phantomjs manet
+RUN apt-get update && \
+    apt-get install -y xvfb iceweasel
 
-EXPOSE  8891
+RUN npm install -g slimerjs phantomjs manet
 
-ENTRYPOINT ["manet"]
-CMD ["--host=0.0.0.0"]
+COPY bin/start_manet.sh /usr/local/bin/
+
+EXPOSE 8891
+
+ENTRYPOINT ["start_manet.sh"]
+CMD ["--engine=slimerjs"]
