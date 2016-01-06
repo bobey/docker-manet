@@ -5,6 +5,8 @@ Dockerfile for Manet - Website screenshot service powered by Node.js, SlimerJS a
 This is a Dockerfile for [vbauer/manet project](https://github.com/vbauer/manet).
 The associated docker image is hosted on [Docker Hub](https://hub.docker.com/r/bobey/manet).
 
+This container supports extended charactersets such as Japanese and Chinese.
+
 ## What is Manet?
 
 **Manet** is a REST API server which allows capturing screenshots of websites using various parameters.
